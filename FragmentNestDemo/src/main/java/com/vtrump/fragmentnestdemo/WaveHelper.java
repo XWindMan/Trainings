@@ -45,7 +45,7 @@ public class WaveHelper {
                 mWaveView, "waterLevelRatio", 0f, 0.5f);
         waterLevelAnim.setDuration(10000);
         waterLevelAnim.setInterpolator(new DecelerateInterpolator());
-        animators.add(waterLevelAnim);
+//        animators.add(waterLevelAnim);
 
         // amplitude animation.
         // wave grows big then grows small, repeatedly
@@ -55,7 +55,7 @@ public class WaveHelper {
         amplitudeAnim.setRepeatMode(ValueAnimator.REVERSE);
         amplitudeAnim.setDuration(5000);
         amplitudeAnim.setInterpolator(new LinearInterpolator());
-        animators.add(amplitudeAnim);
+//        animators.add(amplitudeAnim);
 
         mAnimatorSet = new AnimatorSet();
         mAnimatorSet.playTogether(animators);
