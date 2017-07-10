@@ -1,1 +1,1 @@
-include ':App', ':CameraAndVideo', ':ScrollerDemo'
+include ':App', ':CameraAndVideo', ':ScrollerDemo', ':FragmentNestDemo'
