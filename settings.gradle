@@ -1,1 +1,7 @@
-include ':App', ':CameraAndVideo', ':ScrollerDemo', ':FragmentNestDemo'
+include ':App',
+        ':CameraAndVideo',
+        ':ScrollerDemo',
+        ':FragmentNestDemo',
+        ':SkinDemo',
+        ':SpliderDemo',
+        ':QQ5.0SlideMenu'

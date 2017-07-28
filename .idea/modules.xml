@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/App/App.iml" filepath="$PROJECT_DIR$/App/App.iml" />
       <module fileurl="file://$PROJECT_DIR$/CameraAndVideo/CameraAndVideo.iml" filepath="$PROJECT_DIR$/CameraAndVideo/CameraAndVideo.iml" />
       <module fileurl="file://$PROJECT_DIR$/FragmentNestDemo/FragmentNestDemo.iml" filepath="$PROJECT_DIR$/FragmentNestDemo/FragmentNestDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QQ5.0SlideMenu/QQ5.0SlideMenu.iml" filepath="$PROJECT_DIR$/QQ5.0SlideMenu/QQ5.0SlideMenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/ScrollerDemo/ScrollerDemo.iml" filepath="$PROJECT_DIR$/ScrollerDemo/ScrollerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SkinDemo/SkinDemo.iml" filepath="$PROJECT_DIR$/SkinDemo/SkinDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpliderDemo/SpliderDemo.iml" filepath="$PROJECT_DIR$/SpliderDemo/SpliderDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trainings.iml" filepath="$PROJECT_DIR$/Trainings.iml" />
     </modules>
   </component>

@@ -13,7 +13,9 @@ import android.view.ViewGroup;
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
-
+    private Fragment mPlusOneFragment;
+    private Fragment mPlueTwoFragment;
+    private Fragment mPlusThreeFragment;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -24,23 +26,27 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        mPlusOneFragment = new PlusOneFragment();
+        mPlueTwoFragment = new PlusTwoFragment();
+        mPlusThreeFragment = new PlueThreeFragment();
+        replace(mPlusOneFragment);
 
         view.findViewById(R.id.plus_one).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replace(R.id.child_content, new PlusOneFragment());
+                replace(mPlusOneFragment);
             }
         });
         view.findViewById(R.id.plus_two).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replace(R.id.child_content, new PlusTwoFragment());
+                replace(mPlueTwoFragment);
             }
         });
         view.findViewById(R.id.plus_three).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replace(R.id.child_content, new PlueThreeFragment());
+                replace(mPlusThreeFragment);
             }
         });
 
@@ -49,9 +55,9 @@ public class HomeFragment extends Fragment {
 
     }
 
-    private void replace(int resLayoutId, Fragment fragment) {
+    private void replace(Fragment fragment) {
         final FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.replace(resLayoutId, fragment);
+        transaction.replace(R.id.child_content, fragment);
         transaction.commitAllowingStateLoss();
     }
 }

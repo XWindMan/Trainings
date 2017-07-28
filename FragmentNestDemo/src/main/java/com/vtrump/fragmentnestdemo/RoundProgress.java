@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.graphics.SweepGradient;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -30,6 +29,8 @@ public class RoundProgress extends View {
         mProgressPaint = new Paint();
         mProgressPaint.setAntiAlias(true);
         mProgressPaint.setStrokeWidth(10);
+        mProgressPaint.setStrokeCap(Paint.Cap.ROUND);
+        mProgressPaint.setColor(Color.parseColor("#FFF0F5"));
         mProgressPaint.setStyle(Paint.Style.STROKE);
     }
 
@@ -40,9 +41,9 @@ public class RoundProgress extends View {
         canvas.rotate(135);
         RectF rectF = new RectF(-getWidth() / 2 + mPaddind, -getHeight() / 2 + mPaddind,
                 getWidth() / 2 - mPaddind, getHeight() / 2 - mPaddind);
-        SweepGradient gradient = new SweepGradient(getWidth() / 2, getHeight() / 2,
-                Color.parseColor("#9370DB"), Color.parseColor("#0000FF"));
-        mProgressPaint.setShader(gradient);
+//        SweepGradient gradient = new SweepGradient(getWidth() / 2, getHeight() / 2,
+//                Color.parseColor("#9370DB"), Color.parseColor("#0000FF"));
+//        mProgressPaint.setShader(gradient);
         canvas.drawArc(rectF, 0, 270, false, mProgressPaint);
     }
 
